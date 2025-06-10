@@ -4,6 +4,9 @@ $mysqli = null;
 
 
 function conectarBancoDeDados() {
+    if (defined('PHPUNIT_TEST') && PHPUNIT_TEST && class_exists('FakeMysqli')) {
+        return new FakeMysqli($GLOBALS['fakeData'] ?? []);
+    }
     $hostRemoto = "localhost";
     $usuarioRemoto = "id19689874_marcusabagnale";
     $senhaRemoto = "j<ABO7M/>(J~?lB7";

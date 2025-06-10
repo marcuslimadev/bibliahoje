@@ -15,7 +15,7 @@
 <style>
     body {
         font-family: system-ui;
-        backgound: #f1fad7;
+        background: #f1fad7;
         width: 96% !important;
     }
     .floating-button {
@@ -582,13 +582,6 @@ function hideCalendario(argument) {
   $('#cOff').addClass(['none']);
 }
 
-
-function makeWhite(argument) {
-  $('body').removeClass(['body']);
-  $('body').addClass(['bodyw']);
-  $('#mOn').addClass(['none']);
-  $('#mOff').removeClass(['none']);
-}
 
 function makeBlack(argument) {
   $('body').removeClass(['bodyw']);
